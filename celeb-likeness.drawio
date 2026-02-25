@@ -1,0 +1,219 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.5.3">
+  <diagram name="Page-1" id="DS_zE6EDd4WxrCJpX5Gv">
+    <mxGraphModel dx="1938" dy="1949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jZSLOO9HEhdW4783uw6j-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="🗄️ Persistent Storage Layer" vertex="1">
+          <mxGeometry height="160" width="1680" x="430" y="932" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontStyle=3" value=" Dedicated ML Microservices (FastAPI)" vertex="1">
+          <mxGeometry height="150" width="1185" x="742" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontStyle=3" value="Celery Background Workers" vertex="1">
+          <mxGeometry height="142" width="2196" x="590" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-4" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontStyle=3" value="Mobile App (Flutter)" vertex="1">
+          <mxGeometry height="54" width="225" x="677.5" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-5" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontStyle=3" value="Core FastAPI Gateway" vertex="1">
+          <mxGeometry height="54" width="248" x="693" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-6" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fontStyle=3" value="Redis Task Queue" vertex="1">
+          <mxGeometry height="82" width="170" x="1440" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-7" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Enrollment Worker" vertex="1">
+          <mxGeometry height="54" width="192" x="694" y="553" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-8" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Detection Worker" vertex="1">
+          <mxGeometry height="54" width="183" x="1792" y="553" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-9" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Scraper Worker" vertex="1">
+          <mxGeometry height="54" width="172" x="2517" y="553" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-10" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Image Identity API&#xa;(AdaFace)" vertex="1">
+          <mxGeometry height="78" width="260" x="777" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-11" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Face Liveness API&#xa;(Effort Model)" vertex="1">
+          <mxGeometry height="78" width="260" x="1557" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-12" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Voice Deepfake API&#xa;(DF_1B / Gustking)" vertex="1">
+          <mxGeometry height="78" width="260" x="1106" y="767" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-13" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Apify Scraping API" vertex="1">
+          <mxGeometry height="54" width="218" x="2381" y="767" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-14" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" value="PostgreSQL&#xa;(pgvector &amp; JSONB)" vertex="1">
+          <mxGeometry height="110" width="215" x="540" y="957.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-15" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" value="S3 / MinIO&#xa;(Media Vault)" vertex="1">
+          <mxGeometry height="85" width="198" x="1670" y="969.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-16" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-4" style="curved=0;startArrow=none;endArrow=block;exitX=0;exitY=0.73;rounded=0;" target="jZSLOO9HEhdW4783uw6j-15" value="1. Upload 3 Images &amp; 3 Voice Samples&#xa;(Presigned URLs)">
+          <mxGeometry relative="1" x="-0.7868" y="5" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-80" y="140" />
+              <mxPoint x="-80" y="1200" />
+              <mxPoint x="1769" y="1190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-17" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-4" style="curved=1;startArrow=none;endArrow=block;exitX=0.62;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="jZSLOO9HEhdW4783uw6j-5" value="2. API Calls (Auth, Scan Requests)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="817" y="123" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-18" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-5" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.74;entryX=0;entryY=0.43;rounded=0;" target="jZSLOO9HEhdW4783uw6j-14" value="Manage Users">
+          <mxGeometry relative="1" x="-0.7555" y="9" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="200" y="263" />
+              <mxPoint x="200" y="932" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-19" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-5" style="curved=0;startArrow=none;endArrow=block;exitX=1;exitY=0.69;entryX=0.5;entryY=0;rounded=0;" target="jZSLOO9HEhdW4783uw6j-6" value="Publish Async Tasks">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1525" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-20" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-6" style="curved=0;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0;exitY=0.65;entryX=0.5;entryY=0;rounded=0;" target="jZSLOO9HEhdW4783uw6j-7" value="Pop Task">
+          <mxGeometry relative="1" x="-0.6264" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="790" y="393" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-21" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-6" style="curved=0;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.9;entryX=0.5;entryY=0;rounded=0;" target="jZSLOO9HEhdW4783uw6j-8" value="Pop Task">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1884" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-22" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-6" style="curved=0;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.62;entryX=0.5;entryY=0;rounded=0;" target="jZSLOO9HEhdW4783uw6j-9" value="Pop Task">
+          <mxGeometry relative="1" x="-0.7396" y="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2600" y="391" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-23" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-7" style="curved=0;startArrow=none;endArrow=block;exitX=0;exitY=0.63;entryX=0;entryY=0.5;rounded=0;exitDx=0;exitDy=0;exitPerimeter=0;entryDx=0;entryDy=0;" target="jZSLOO9HEhdW4783uw6j-10" value="POST S3 URLs&#xa;(Returns 512d &amp; 192d Vectors)">
+          <mxGeometry relative="1" x="-0.1864" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="430" y="590" />
+              <mxPoint x="430" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-24" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-7" style="curved=0;startArrow=none;endArrow=block;exitX=0.61;exitY=1;entryX=0.25;entryY=0;rounded=0;entryDx=0;entryDy=0;" target="jZSLOO9HEhdW4783uw6j-12" value="POST S3 URLs&#xa;(Returns 192d Voice Vector)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="690" />
+              <mxPoint x="1170" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-25" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-8" style="curved=0;startArrow=none;endArrow=block;exitX=0;exitY=0.72;entryX=1;entryY=0.31;rounded=0;" target="jZSLOO9HEhdW4783uw6j-10" value="POST S3 URLs&#xa;(1. Match Identity)">
+          <mxGeometry relative="1" x="-0.3629" y="4" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1240" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-26" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-8" style="curved=0;startArrow=none;endArrow=block;exitX=0;exitY=0.95;entryX=0.5;entryY=0;rounded=0;" target="jZSLOO9HEhdW4783uw6j-11" value="POST S3 URLs&#xa;(2. Face Deepfake Check)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1687" y="632" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-27" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-8" style="curved=0;startArrow=none;endArrow=block;exitX=0.57;exitY=1;entryX=0.908;entryY=0.987;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="jZSLOO9HEhdW4783uw6j-12" value="POST S3 URLs&#xa;(3. Voice Deepfake Check)">
+          <mxGeometry relative="1" x="-0.5906" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1890" y="690" />
+              <mxPoint x="2000" y="690" />
+              <mxPoint x="2000" y="910" />
+              <mxPoint x="1340" y="910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-28" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-9" style="curved=0;startArrow=none;endArrow=block;exitX=0.16;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="jZSLOO9HEhdW4783uw6j-13" value="Search Keywords">
+          <mxGeometry relative="1" x="0.5179" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2490" y="632" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-29" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-13" style="curved=0;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.4;rounded=0;" target="jZSLOO9HEhdW4783uw6j-15" value="Save Found Video">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2490" y="1004" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-30" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-7" style="curved=0;startArrow=none;endArrow=block;exitX=0.25;exitY=1;entryX=0;entryY=0;rounded=0;exitDx=0;exitDy=0;entryDx=0;entryDy=10;entryPerimeter=0;" target="jZSLOO9HEhdW4783uw6j-14" value="Save Master Identity Vectors">
+          <mxGeometry relative="1" x="-0.3113" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="740" y="710" />
+              <mxPoint x="499" y="710" />
+              <mxPoint x="499" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-31" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-8" style="curved=0;startArrow=none;endArrow=block;exitX=0.96;exitY=1;entryX=0.5;entryY=1;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="jZSLOO9HEhdW4783uw6j-14" value="Save Final Report (JSONB)">
+          <mxGeometry relative="1" x="-0.9153" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2045" y="632" />
+              <mxPoint x="2045" y="1170" />
+              <mxPoint x="648" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-32" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-9" style="curved=0;startArrow=none;endArrow=block;exitX=0.84;exitY=1;entryX=0.855;entryY=1;rounded=0;entryDx=0;entryDy=-2.9;entryPerimeter=0;" target="jZSLOO9HEhdW4783uw6j-14" value="Log Scraped Metadata">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2715" y="632" />
+              <mxPoint x="2715" y="1130" />
+              <mxPoint x="724" y="1130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-33" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-7" style="curved=0;dashed=1;dashPattern=2 3;startArrow=none;endArrow=none;exitX=1;exitY=0.81;entryX=0.855;entryY=1;rounded=0;entryDx=0;entryDy=-2.9;entryPerimeter=0;" target="jZSLOO9HEhdW4783uw6j-15" value="Fetch Uploads">
+          <mxGeometry relative="1" x="-0.763" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1090" y="600" />
+              <mxPoint x="1090" y="460" />
+              <mxPoint x="310" y="460" />
+              <mxPoint x="320" y="1350" />
+              <mxPoint x="1839" y="1350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jZSLOO9HEhdW4783uw6j-34" edge="1" parent="1" source="jZSLOO9HEhdW4783uw6j-8" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=none;exitX=1;exitY=0.73;entryX=1;entryY=0.37;rounded=0;" target="jZSLOO9HEhdW4783uw6j-15" value="Fetch Scraped Media">
+          <mxGeometry relative="1" x="-0.7095" y="2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2270" y="632" />
+              <mxPoint x="2270" y="932" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
