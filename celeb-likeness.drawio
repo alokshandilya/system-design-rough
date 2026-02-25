@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="jZSLOO9HEhdW4783uw6j-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="🗄️ Persistent Storage Layer" vertex="1">
+        <mxCell id="jZSLOO9HEhdW4783uw6j-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontStyle=3" value="Persistent Storage Layer" vertex="1">
           <mxGeometry height="160" width="1680" x="430" y="932" as="geometry" />
         </mxCell>
         <mxCell id="jZSLOO9HEhdW4783uw6j-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontStyle=3" value=" Dedicated ML Microservices (FastAPI)" vertex="1">
