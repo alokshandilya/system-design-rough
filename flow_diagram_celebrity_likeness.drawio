@@ -1,14 +1,11 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0" version="29.5.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0" version="29.6.4">
   <diagram name="Page-1" id="Y1FtXFBLVE4uz5RBM53D">
-    <mxGraphModel dx="1360" dy="2161" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2042" dy="2406" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-205" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontStyle=1" value="GPU Server 3 (Ensemble AI)" vertex="1">
           <mxGeometry height="171" width="680" x="1550" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-206" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontStyle=1" value="GPU Server 2 (Deepfake)" vertex="1">
-          <mxGeometry height="147" width="618" x="1540" y="1040" as="geometry" />
         </mxCell>
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-207" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;verticalAlign=top;" value=" Azure Blob Storage" vertex="1">
           <mxGeometry height="290" width="211" x="1670" y="370" as="geometry" />
@@ -43,12 +40,6 @@
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-217" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" value="Cold Tier" vertex="1">
           <mxGeometry height="68" width="79" x="1732" y="510" as="geometry" />
         </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-218" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Deepfake API" vertex="1">
-          <mxGeometry height="54" width="159" x="1587.5" y="1086.5" as="geometry" />
-        </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-219" parent="1" style="strokeWidth=2;shape=process;whiteSpace=wrap;size=0.04;" value="SVD Compute" vertex="1">
-          <mxGeometry height="39" width="133" x="1960" y="1094" as="geometry" />
-        </mxCell>
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-220" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Ensemble API" vertex="1">
           <mxGeometry height="54" width="161" x="1691" y="75" as="geometry" />
         </mxCell>
@@ -61,12 +52,6 @@
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-223" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-212" style="curved=0;startArrow=block;endArrow=block;exitX=1;exitY=0;entryX=0;entryY=0.5;rounded=0;exitDx=0;exitDy=0;" target="GrSiFnkm3wzVuaC-9kf2-211" value="State Sync">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-224" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-218" style="curved=0;startArrow=none;endArrow=block;exitX=1;exitY=0.5;rounded=0;" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-            <mxPoint x="1960" y="1110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-225" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-220" style="curved=0;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;entryDx=0;entryDy=0;" target="GrSiFnkm3wzVuaC-9kf2-221" value="">
@@ -126,15 +111,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-234" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-212" style="curved=1;startArrow=none;endArrow=block;strokeWidth=3;exitX=1;exitY=0.94;entryX=0;entryY=0.5;rounded=0;" target="GrSiFnkm3wzVuaC-9kf2-218" value="4a. Dispatch Hot URLs">
-          <mxGeometry relative="1" x="0.2036" y="-5" as="geometry">
-            <mxPoint as="offset" />
-            <Array as="points">
-              <mxPoint x="767" y="865" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-235" edge="1" parent="1" style="curved=0;startArrow=none;endArrow=block;strokeWidth=2;entryX=0;entryY=0.5;rounded=0;" target="GrSiFnkm3wzVuaC-9kf2-220" value="4b. Dispatch Hot URLs">
+        <mxCell id="GrSiFnkm3wzVuaC-9kf2-235" edge="1" parent="1" style="curved=0;startArrow=none;endArrow=block;strokeWidth=2;entryX=0;entryY=0.5;rounded=0;" target="GrSiFnkm3wzVuaC-9kf2-220" value="4. Dispatch Hot URLs">
           <mxGeometry relative="1" x="-0.7518" y="-20" as="geometry">
             <mxPoint as="offset" />
             <Array as="points">
@@ -146,13 +123,6 @@
             <mxPoint x="670" y="780" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-236" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-216" style="curved=0;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.93;entryX=0.5;entryY=0;rounded=0;entryDx=0;entryDy=0;" target="GrSiFnkm3wzVuaC-9kf2-219" value="Stream Image">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2080" y="510" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-237" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-216" style="curved=0;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.43;rounded=0;" value="Stream Image">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -162,16 +132,7 @@
             <mxPoint x="2200" y="101" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-238" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-219" style="curved=0;startArrow=none;endArrow=block;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=1;rounded=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" target="GrSiFnkm3wzVuaC-9kf2-212" value="5a. Return Fake Scores">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2026" y="1300" />
-              <mxPoint x="1440" y="1280" />
-              <mxPoint x="600" y="1040" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-239" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-221" style="curved=0;startArrow=none;endArrow=block;strokeWidth=2;exitX=0.5;exitY=0;rounded=0;exitDx=0;exitDy=0;" value="5b. Return Ensemble Scores">
+        <mxCell id="GrSiFnkm3wzVuaC-9kf2-239" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-221" style="curved=0;startArrow=none;endArrow=block;strokeWidth=2;exitX=0.5;exitY=0;rounded=0;exitDx=0;exitDy=0;" value="5 Return Ensemble Scores">
           <mxGeometry relative="1" x="-0.9306" as="geometry">
             <mxPoint y="-1" as="offset" />
             <Array as="points">
