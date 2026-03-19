@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-205" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontStyle=1" value="GPU Server 2 (Ensemble AI)" vertex="1">
+        <mxCell id="GrSiFnkm3wzVuaC-9kf2-205" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontStyle=1" value="GPU Server 2 (GenAI Detection)" vertex="1">
           <mxGeometry height="171" width="680" x="1550" y="30" as="geometry" />
         </mxCell>
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-207" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontStyle=1;verticalAlign=top;" value=" Azure Blob Storage" vertex="1">
@@ -16,19 +16,19 @@
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-209" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontStyle=1;gradientColor=none;fillColor=light-dark(#FFFFFF,#333333);" value="Main Backend (Orchestrator)" vertex="1">
           <mxGeometry height="331" width="680" x="430" y="633" as="geometry" />
         </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-210" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1" value="Apify / JSON Upload" vertex="1">
-          <mxGeometry height="39" width="215" x="20" y="789" as="geometry" />
+        <mxCell id="GrSiFnkm3wzVuaC-9kf2-210" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;fixedSize=1;strokeWidth=2;whiteSpace=wrap;fontStyle=1" value="Apify / JSON Upload (Data Ingestion)" vertex="1">
+          <mxGeometry height="60" width="150" x="70" y="778.5" as="geometry" />
         </mxCell>
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-211" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" value="PostgreSQL" vertex="1">
           <mxGeometry height="73" width="102" x="959" y="660" as="geometry" />
         </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-212" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Celery Dispatcher" vertex="1">
+        <mxCell id="GrSiFnkm3wzVuaC-9kf2-212" parent="1" style="whiteSpace=wrap;strokeWidth=2;html=1;" value="&lt;div&gt;Celery Dispatcher&lt;/div&gt;&lt;div&gt;(Task Queue)&lt;/div&gt;" vertex="1">
           <mxGeometry height="54" width="187" x="510" y="781.5" as="geometry" />
         </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-213" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Arcface API" vertex="1">
+        <mxCell id="GrSiFnkm3wzVuaC-9kf2-213" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Face Matching API" vertex="1">
           <mxGeometry height="54" width="144" x="790" y="411" as="geometry" />
         </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-214" parent="1" style="strokeWidth=2;shape=process;whiteSpace=wrap;size=0.04;" value="ONNX Compute" vertex="1">
+        <mxCell id="GrSiFnkm3wzVuaC-9kf2-214" parent="1" style="strokeWidth=2;shape=process;whiteSpace=wrap;size=0.04;" value="Face Extraction and Matching" vertex="1">
           <mxGeometry height="39" width="147" x="1020" y="427" as="geometry" />
         </mxCell>
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-215" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Instagram CDN" vertex="1">
@@ -40,10 +40,10 @@
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-217" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" value="Cold Tier" vertex="1">
           <mxGeometry height="68" width="79" x="1732" y="510" as="geometry" />
         </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-220" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Ensemble API" vertex="1">
+        <mxCell id="GrSiFnkm3wzVuaC-9kf2-220" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="GenAI Detection API" vertex="1">
           <mxGeometry height="54" width="161" x="1691" y="75" as="geometry" />
         </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-221" parent="1" style="strokeWidth=2;shape=process;whiteSpace=wrap;size=0.04;" value="AI-Generated / Edited Detection" vertex="1">
+        <mxCell id="GrSiFnkm3wzVuaC-9kf2-221" parent="1" style="strokeWidth=2;shape=process;whiteSpace=wrap;size=0.04;" value="AI-Generated / Edited Detection (Ensemble logic)" vertex="1">
           <mxGeometry height="63" width="231" x="1970" y="70.5" as="geometry" />
         </mxCell>
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-222" parent="1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" value="Drop" vertex="1">
@@ -126,7 +126,7 @@
         <mxCell id="GrSiFnkm3wzVuaC-9kf2-237" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-216" style="curved=0;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.43;rounded=0;" value="fetch image blob">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="2260" y="455" />
+              <mxPoint x="2270" y="455" />
               <mxPoint x="2270" y="100" />
             </Array>
             <mxPoint x="2200" y="101" as="targetPoint" />
@@ -173,7 +173,7 @@
             <mxPoint x="33" y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kv4Q_nOC07yG4mXPUvrD-10" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=middle;fontStyle=1;fontSize=19;" value="GPU Server 3 (Qwen VLM)" vertex="1">
+        <mxCell id="kv4Q_nOC07yG4mXPUvrD-10" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=middle;fontStyle=1;fontSize=19;" value="GPU Server 3 (Qwen VLM) - Image Metadata Extraction" vertex="1">
           <mxGeometry height="180" width="410" x="1820" y="940" as="geometry" />
         </mxCell>
         <mxCell id="kv4Q_nOC07yG4mXPUvrD-11" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-212" style="startArrow=none;endArrow=block;exitX=0.75;exitY=1;rounded=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="kv4Q_nOC07yG4mXPUvrD-10" value="">
