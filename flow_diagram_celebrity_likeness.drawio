@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0" version="29.6.4">
   <diagram name="Page-1" id="Y1FtXFBLVE4uz5RBM53D">
-    <mxGraphModel dx="2226" dy="2029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1757" dy="1808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -101,8 +101,8 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GrSiFnkm3wzVuaC-9kf2-233" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-214" style="curved=0;startArrow=none;endArrow=block;strokeWidth=2;exitX=0.5;exitY=1;entryX=1;entryY=0.5;rounded=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="GrSiFnkm3wzVuaC-9kf2-212" value="4. Return Tier URLs">
-          <mxGeometry relative="1" x="-0.775" as="geometry">
+        <mxCell id="GrSiFnkm3wzVuaC-9kf2-233" edge="1" parent="1" source="GrSiFnkm3wzVuaC-9kf2-214" style="curved=0;startArrow=none;endArrow=block;strokeWidth=2;exitX=0.5;exitY=1;entryX=1;entryY=0.5;rounded=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="GrSiFnkm3wzVuaC-9kf2-212" value="4. Return Tier URLs and match scores">
+          <mxGeometry relative="1" x="-0.9093" as="geometry">
             <mxPoint as="offset" />
             <Array as="points">
               <mxPoint x="1094" y="600" />
